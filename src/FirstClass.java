@@ -12,6 +12,7 @@ public class FirstClass {
         short ourShortValue =  Short.MIN_VALUE; int ourIntValue = Integer.MAX_VALUE; // EKAMA STATMENT eke datatypes 2 k thiyyedi mehema danna
 
 
+
     }
 
 }
