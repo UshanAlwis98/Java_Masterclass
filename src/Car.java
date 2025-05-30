@@ -11,6 +11,6 @@ public class Car {
                             color + " " +
                 make + " " +
                 model + " " +
-                (convirtable ? "Convirtable" : ""));
+                (convirtable ? "convertible" : ""));
     }
 }
