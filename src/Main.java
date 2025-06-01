@@ -9,6 +9,7 @@ public class Main {
         System.out.println("Make is " + car.getMake());
         System.out.println("Model is " + car.getModel());
         System.out.println("Color is " + car.getColor());
+        System.out.println(car.getDoors() + " are in this car");
         //car.describeCar();
     }
 }
