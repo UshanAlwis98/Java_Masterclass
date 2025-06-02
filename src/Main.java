@@ -5,11 +5,11 @@ public class Main {
 //       car.make = "Porche";
 //       car.model = "Carrera";
 //       car.color = "White";
+//
+//        System.out.println("Make is " + car.make());
+//        System.out.println("Model is " + car.model());
+//        System.out.println("Color is " + car.color());
 
-        System.out.println("Make is " + car.getMake());
-        System.out.println("Model is " + car.getModel());
-        System.out.println("Color is " + car.getColor());
-
-        //car.describeCar();
+        car.describeCar();
     }
 }

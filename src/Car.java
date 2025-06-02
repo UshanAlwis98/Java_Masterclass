@@ -7,25 +7,7 @@ public class Car {
     private  boolean convirtable = true;
 
 
-    public  String getMake(){
-        return  make;
-    }
 
-    public String getModel() {
-        return model;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public int getDoors() {
-        return doors;
-    }
-
-    public boolean isConvirtable() {
-        return convirtable;
-    }
 
     public void describeCar() {
         System.out.println(doors + "-Door " +
@@ -34,4 +16,6 @@ public class Car {
                 model + " " +
                 (convirtable ? "convertible" : ""));
     }
+
+
 }
