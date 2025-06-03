@@ -4,7 +4,7 @@ public class Car {
     private  String model = "Model X";
     private String color = "Red";
     private int doors = 4;
-    private  boolean convirtable = false;
+    private  boolean convirtable = true;
 
 
 
