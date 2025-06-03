@@ -4,7 +4,29 @@ public class Car {
     private  String model = "Model X";
     private String color = "Red";
     private int doors = 4;
-    private  boolean convirtable = true;
+    private  boolean convirtable = false;
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getDoors() {
+        return doors;
+    }
+
+    public String isConvirtable() {
+        return  convirtable ? "convertible" : "Not convertible";
+    }
+
+
 
 
 
