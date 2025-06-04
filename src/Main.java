@@ -1,13 +1,15 @@
 public class Main {
     public static void main(String[] args) {
 
-        Car myFirstCarObject = new Car();
+        Bankaccount bankacc = new Bankaccount();
 
-        myFirstCarObject.setMake("Benz");
-        System.out.println(myFirstCarObject.getMake());
+        bankacc.setAccountNumber("19981998");
+        System.out.println("Your Account number is= " + bankacc.getAccountNumber());
 
-        myFirstCarObject.setDoors(1);
-        System.out.println(myFirstCarObject.getDoors());
+
+        bankacc.depostingfund(30);
+        bankacc.withdrawingfund(2000);
+
 
     }
 }

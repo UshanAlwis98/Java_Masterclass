@@ -3,7 +3,7 @@ public class Car {
         private String make = "Toyota";
         private String model;
 
-        private int doors = 2;
+        private int doors;
         private int passengers;
 
         private boolean convertible;
@@ -22,7 +22,7 @@ public class Car {
                 return doors;
         }
 
-        public void setDoors(int doors) {
-                this.doors = doors;
+        public void setDoors(int doorParameter) {
+                this.doors = doorParameter;
         }
 }
