@@ -4,7 +4,7 @@ public class Car {
     private  String model = "Model X";
     private String color = "Red";
     private int doors = 4;
-    private  boolean convirtable = false;
+    private  boolean convertible = false;
 
     public String getMake() {
         return make;
@@ -38,12 +38,12 @@ public class Car {
         this.doors = doors;
     }
 
-    public boolean isConvirtable() {
-        return convirtable;
+    public boolean isConvertible() {
+        return convertible;
     }
 
-    public void setConvirtable(boolean convirtable) {
-        this.convirtable = convirtable;
+    public void setConvertible(boolean convertible) {
+        this.convertible = convertible;
     }
 
     public void describeCar() {
@@ -51,7 +51,7 @@ public class Car {
                             color + " " +
                             make + " " +
                             model + " " +
-                            (convirtable ? "convertible" : ""));
+                            (convertible ? "convertible" : ""));
     }
 
 
