@@ -8,7 +8,7 @@ public class Main {
 
 
         bankacc.depostingfund(30);
-        bankacc.withdrawingfund(2000);
+        bankacc.withdrawingfund(3000);
 
 
     }

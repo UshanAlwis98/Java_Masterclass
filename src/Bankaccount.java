@@ -51,8 +51,8 @@ public class Bankaccount {
     }
 
     public void withdrawingfund(int withdrawingValueParameter){
-            if (accountBalance<0){
-                System.out.println("You do not have enough funds to do this transaction");
+            if (accountBalance-withdrawingValueParameter<0){
+                System.out.println("You do not have enough funds to do this transaction and you only have= " + accountBalance);
             }
 
             else {
