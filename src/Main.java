@@ -10,6 +10,14 @@ public class Main {
         bankacc.depostingfund(30);
         bankacc.withdrawingfund(3000);
 
+        Student stu = new Student();
+        stu.setGrade(100);
+        System.out.println("Your grade is= " + stu.getGrade());
+
+        Gradebook gradestu = new Gradebook();
+        gradestu.addStudent("Loshitha");
+
+
 
     }
 }
