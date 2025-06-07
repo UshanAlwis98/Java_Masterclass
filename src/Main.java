@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
 
-        Bankaccount bankacc = new Bankaccount();
+        Bankaccount bankacc = new Bankaccount("19981998",1200,"Ushan","ushanloshitha@gmail.com","0767649483");
 
-        bankacc.setAccountNumber("19981998");
+        bankacc.setAccountNumber("");
         System.out.println("Your Account number is= " + bankacc.getAccountNumber());
 
 
