@@ -1,10 +1,11 @@
 public class Main {
     public static void main(String[] args) {
 
-        Bankaccount bankacc = new Bankaccount("19981998",1200,"Ushan","ushanloshitha@gmail.com","0767649483");
+        Bankaccount bankacc = new Bankaccount("1998876",1200,"Ushan","ushanloshitha@gmail.com","0767649483");
 
-        bankacc.setAccountNumber("");
+
         System.out.println("Your Account number is= " + bankacc.getAccountNumber());
+        System.out.println("Your customer name is= " + bankacc.getCustomerName());
 
 
         bankacc.depostingfund(30);
