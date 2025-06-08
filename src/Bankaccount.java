@@ -5,6 +5,7 @@ public class Bankaccount {
     private String email;
     private String phoneNumber;
 
+    //Explicit default constructor
     public Bankaccount(){
         System.out.println("Empty constructor called");
     }
