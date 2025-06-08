@@ -21,6 +21,7 @@ public class Main {
 
 
         Bankaccount bankacc2 = new Bankaccount(8000,"Loshitha","1948");
+        System.out.println("Your new value is= " + bankacc2.getAccountBalance() + " "+ bankacc2.getAccountNumber());
 
     }
 }
