@@ -1,15 +1,16 @@
 public class Main {
     public static void main(String[] args) {
 
-        Bankaccount bankacc = new Bankaccount("1998876",1200,"Ushan","ushanloshitha@gmail.com","0767649483");
+        Bankaccount bankacc1 = new Bankaccount("1998876",1200,"Ushan","ushanloshitha@gmail.com","0767649483");
 
 
-        System.out.println("Your Account number is= " + bankacc.getAccountNumber());
-        System.out.println("Your customer name is= " + bankacc.getCustomerName());
+        System.out.println("Your Account number is= " + bankacc1.getAccountNumber());
+        System.out.println("Your customer name is= " + bankacc1.getCustomerName());
 
 
-        bankacc.depostingfund(30);
-        bankacc.withdrawingfund(3000);
+        bankacc1.depostingfund(30);
+        bankacc1.withdrawingfund(3000);
+
 
         Student stu = new Student();
         stu.setGrade(100);
@@ -19,6 +20,7 @@ public class Main {
         gradestu.addStudent("Loshitha");
 
 
+        Bankaccount bankacc2 = new Bankaccount(8000,"Loshitha","1948");
 
     }
 }

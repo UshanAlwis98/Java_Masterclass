@@ -10,7 +10,17 @@ public class Bankaccount {
         System.out.println("Empty constructor called");
     }
 
-    //Parametrized constructor
+
+    //Constructor with 3 parameters
+    public Bankaccount(int accountBalance, String customerName, String accountNumber) {
+
+        this("19961996", 7200,customerName,"ushanloshitha@gmail.com" ,"0767649483");
+//        this.accountBalance = accountBalance;
+//        this.customerName = customerName;
+//        this.accountNumber = accountNumber;
+    }
+
+    //5 Args Parametrized constructor
     public Bankaccount(String accountNumber,int accountBalance,String customerName,String email,String phoneNumber){
         System.out.println("Constructor with parameter called.");
         this.accountNumber = accountNumber;
