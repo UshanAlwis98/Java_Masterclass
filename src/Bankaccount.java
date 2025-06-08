@@ -10,6 +10,7 @@ public class Bankaccount {
         System.out.println("Empty constructor called");
     }
 
+    //Parametrized constructor
     public Bankaccount(String accountNumber,int accountBalance,String customerName,String email,String phoneNumber){
         System.out.println("Constructor with parameter called.");
         this.accountNumber = accountNumber;
