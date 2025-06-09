@@ -1,28 +1,18 @@
 public class Bankaccount {
     private String accountNumber;
-    private int accountBalance=2000;
+    private int accountBalance = 2000;
     private String customerName;
     private String email;
     private String phoneNumber;
 
-    //Explicit default constructor
-    public Bankaccount(){
+    // 1. Default constructor
+    public Bankaccount() {
         System.out.println("Empty constructor called");
     }
 
-
-    //Constructor with 3 parameters
-    public Bankaccount(int accountBalance, String customerName, String accountNumber) {
-
-        this("19961996", 7200,customerName,"ushanloshitha@gmail.com" ,"0767649483");
-//        this.accountBalance = accountBalance;
-//        this.customerName = customerName;
-//        this.accountNumber = accountNumber;
-    }
-
-    //5 Args Parametrized constructor
-    public Bankaccount(String accountNumber,int accountBalance,String customerName,String email,String phoneNumber){
-        System.out.println("Constructor with parameter called.");
+    // 2. 5-parameter main constructor
+    public Bankaccount(String accountNumber, int accountBalance, String customerName, String email, String phoneNumber) {
+        System.out.println("Constructor with all parameters called.");
         this.accountNumber = accountNumber;
         this.accountBalance = accountBalance;
         this.customerName = customerName;
@@ -30,59 +20,21 @@ public class Bankaccount {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getAccountNumber(){
-        return accountNumber;
+    // 3. 3-parameter constructor
+    public Bankaccount(int accountBalance, String customerName, String accountNumber) {
+        this(accountNumber, accountBalance, customerName, "ushanloshitha@gmail.com", "0767649483");
+        System.out.println("Constructor with 3 parameters called");
     }
 
-    public void setAccountNumber(String accountNumberParameter){
-        this.accountNumber = accountNumberParameter;
+    // 4. 2-parameter constructor
+    public Bankaccount(String email, String phoneNumber) {
+        this("Gimantha", "19691969", email, phoneNumber); // ✅ now calls 4-param constructor
+        System.out.println("Constructor with 2 parameters called");
     }
 
-    public int getAccountBalance() {
-        return accountBalance;
-    }
-
-    public void setAccountBalance(int accountBalance) {
-        this.accountBalance = accountBalance;
-    }
-
-    public String getCustomerName() {
-        return customerName;
-    }
-
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public void depostingfund(int depostingValueParameter){
-            accountBalance += depostingValueParameter;
-            System.out.println("Your new account balance is= "+ accountBalance);
-    }
-
-    public void withdrawingfund(int withdrawingValueParameter){
-            if (accountBalance-withdrawingValueParameter<0){
-                System.out.println("You do not have enough funds to do this transaction and you only have= " + accountBalance);
-            }
-
-            else {
-                accountBalance -= withdrawingValueParameter;
-                System.out.println("Your new account balance is= " + accountBalance);
-            }
+    // 5. 4-parameter constructor
+    public Bankaccount(String customerName, String accountNumber, String email, String phoneNumber) {
+        this(accountNumber, 2500, customerName, email, phoneNumber); // ✅ now calls 5-param
+        System.out.println("Constructor with 4 parameters called");
     }
 }
