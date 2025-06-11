@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         CoffeeCup cupA = new CoffeeCup("Medium", "Vanilla");
-        CoffeeCup cupB = cupA; // Created new reference cupB and assign into object that points cupA
+        CoffeeCup cupB = cupA;
 
         cupB.setFlavor("Hazelnut");
 
