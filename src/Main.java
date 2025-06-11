@@ -12,7 +12,7 @@ public class Main {
         System.out.println(anotherHouse.getColor());
 
         House greenHouse = new House("green");
-        anotherHouse = greenHouse;
+         anotherHouse = greenHouse;
 
         System.out.println(blueHouse.getColor());
         System.out.println(greenHouse.getColor());
