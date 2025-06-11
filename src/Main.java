@@ -1,11 +1,21 @@
 public class Main {
     public static void main(String[] args) {
 
-    Bankaccount acc1 = new Bankaccount(13000,"Sugath","13339");
-    System.out.println("Your account number is= " + acc1.getAccountNumber());
-    System.out.println("Your name is= " + acc1.getCustomerName());
-    acc1.setAccountBalance(500);
-    System.out.println("Your account balance is= " + acc1.getAccountBalance());
+        House blueHouse = new House("blue");
+        House anotherHouse = blueHouse;
 
+        System.out.println(blueHouse.getColor());
+        System.out.println(anotherHouse.getColor());
+
+        anotherHouse.setColor("red");
+        System.out.println(blueHouse.getColor());
+        System.out.println(anotherHouse.getColor());
+
+        House greenHouse = new House("green");
+        anotherHouse = greenHouse;
+
+        System.out.println(blueHouse.getColor());
+        System.out.println(greenHouse.getColor());
+        System.out.println(anotherHouse.getColor());
     }
 }
