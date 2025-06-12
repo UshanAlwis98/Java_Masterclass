@@ -5,6 +5,7 @@ public class Main {
         Dog fluffy = new Dog ("fluffy");
         rex.printName();
         fluffy.printName();
+
     }
 }
 
