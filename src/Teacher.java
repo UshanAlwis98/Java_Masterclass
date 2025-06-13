@@ -11,13 +11,14 @@ public class Teacher {
         ClassList = classList;
     }
 
+    //overriding is essential.
     @Override
     public String toString() {
         return "Teacher{" +
                 "Id='" + Id + '\'' +
                 ", Name='" + Name + '\'' +
-                ", DateOfBirth='" + DateOfBirth + '\'' +
-                ", ClassList='" + ClassList + '\'' +
+                ", Date Of Birth='" + DateOfBirth + '\'' +
+                ", Class List='" + ClassList + '\'' +
                 '}';
     }
 }
