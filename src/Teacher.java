@@ -11,6 +11,38 @@ public class Teacher {
         ClassList = classList;
     }
 
+    public String getId() {
+        return Id;
+    }
+
+    public void setId(String id) {
+        Id = id;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getDateOfBirth() {
+        return DateOfBirth;
+    }
+
+    public void setDateOfBirth(String dateOfBirth) {
+        DateOfBirth = dateOfBirth;
+    }
+
+    public String getClassList() {
+        return ClassList;
+    }
+
+    public void setClassList(String classList) {
+        ClassList = classList;
+    }
+
     //overriding is essential.
     @Override
     public String toString() {
