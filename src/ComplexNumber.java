@@ -2,6 +2,7 @@ public class ComplexNumber {
     private double real;
     private double imaginary;
 
+    //Complex Number = Real part + Imaginary part
     // Constructor
     public ComplexNumber(double real, double imaginary) {
         this.real = real;
