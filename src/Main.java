@@ -1,18 +1,15 @@
 public class Main {
     public static void main(String[] args) {
 
-        Animal animal = new Animal("Generic Animal","Huge",400);
-        doAnimalStuff(animal,"slow");
-
-        Dog dog = new Dog();
-        doAnimalStuff(dog,"fast");
-    }
-
-    public static void doAnimalStuff(Animal animal,String speed){
-        animal.makeNoise();
-        animal.move(speed);
-        System.out.println(animal);
-        System.out.println("_ _ _ _ _ _");
+        SimpleCalculator calculator = new SimpleCalculator();
+        calculator.setFirstNumber(5.0);
+        calculator.setSecondNumber(4);
+        System.out.println("add= " + calculator.getAdditionResult());
+        System.out.println("subtract= " + calculator.getSubtractionResult());
+        calculator.setFirstNumber(5.25);
+        calculator.setSecondNumber(0);
+        System.out.println("multiply= " + calculator.getMultiplicationResult());
+        System.out.println("divide= " + calculator.getDivisionResult());
     }
 }
 
