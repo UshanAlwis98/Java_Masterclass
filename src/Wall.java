@@ -4,9 +4,7 @@ public class Wall {
     private double width;
     private double height;
 
-    public Wall(){
-
-    }
+    public Wall(){}
 
     public Wall(double width,double height){
 
