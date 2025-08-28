@@ -26,4 +26,8 @@ public class Dog extends Animal{
                 ", tailShape='" + tailShape + '\'' +
                 "} " + super.toString();
     }
+
+    public void makeNoise(){
+
+    }
 }
