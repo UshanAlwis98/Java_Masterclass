@@ -11,6 +11,7 @@ public class Dog extends Animal{
 
     public Dog(String type,double weight){
         this(type,weight,"Perky","Curled");
+
     }
 
     public Dog(String type,  double weight, String earShape, String tailShape) {
