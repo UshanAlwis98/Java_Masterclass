@@ -2,8 +2,8 @@ package Inheritance;
 
 public class Main {
     public static void main(String [] args){
-        Animal animall = new Animal("Generic Animal","Huge",400);
-        doAnimalstuff(animall,"slow");
+        Animal animal = new Animal("Generic Animal","Huge",400);
+        doAnimalstuff(animal,"slow");
 
         Dog dog = new Dog();
         doAnimalstuff(dog,"Fast");
@@ -15,10 +15,10 @@ public class Main {
         doAnimalstuff(retriver,"slow");
     }
 
-    public static void doAnimalstuff(Animal animall , String speed){
-        animall.makeNoise();
-        animall.move(speed);
-        System.out.println(animall);
+    public static void doAnimalstuff(Animal animal , String speed){
+        animal.makeNoise();
+        animal.move(speed);
+        System.out.println(animal);
         System.out.println("-----------------");
     }
 }
