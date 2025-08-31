@@ -29,6 +29,11 @@ public class Dog extends Animal{
     }
 
     public void makeNoise(){
-        System.out.println("Doggg");
+
+    }
+
+    @Override
+    public void move(String speed) {
+        super.move(speed);
     }
 }
