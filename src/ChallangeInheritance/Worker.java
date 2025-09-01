@@ -6,9 +6,7 @@ public class Worker {
     private String birthDate;
     protected String endDate;
 
-    public Worker(){
 
-    }
 
     public Worker(String name, String birthDate) {
         this.name = name;

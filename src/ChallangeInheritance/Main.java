@@ -9,15 +9,14 @@ public class Main {
         System.out.println(" Age = "+ tim.getAge());
         System.out.println(" Pay= " + tim.collectPay());
 
-        Employee joe = new Employee("Joe","11/11/1990","03/03/2020");
+        SalariedEmployee joe = new SalariedEmployee("Joe","11/11/1990","03/03/2020",35000);
         System.out.println(joe);
 
-//        Worker worker = new Worker();
-//        worker.getAge();
-//        worker.collectPay();
-//
-//        SalariedEmployee salariedEmployee = new SalariedEmployee();
-//        salariedEmployee.retire();
+        System.out.println("Joe's Paycheck = $ " + joe.collectPay());
+
+        joe.retire();
+        System.out.println("Joe's Pension check = $ " + joe.collectPay());
+
     }
 
 
