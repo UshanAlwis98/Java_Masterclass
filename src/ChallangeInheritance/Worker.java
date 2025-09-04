@@ -7,7 +7,7 @@ public class Worker {
     protected String endDate;
 
 
-
+//    Constructor for Worker Class
     public Worker(String name, String birthDate) {
         this.name = name;
         this.birthDate = birthDate;
