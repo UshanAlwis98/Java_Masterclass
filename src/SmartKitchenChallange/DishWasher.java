@@ -1,6 +1,6 @@
 package SmartKitchenChallange;
 
-public class DishWasher extends SmartKitchen
+public class DishWasher extends  SmartKitchen
 {
     public boolean hasWorkToDo;
 
