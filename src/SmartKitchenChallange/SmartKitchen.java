@@ -7,7 +7,7 @@ public class SmartKitchen {
     Refrigerator iceBox;
 
     public void addWater(boolean){
-        this.brewmaster = CoffeeMaker;
+
     }
 
     public void pourMilk(){
