@@ -2,11 +2,29 @@ package SmartKitchenChallange;
 
 public class SmartKitchen {
 
-    CoffeeMaker brewmaster;
-    DishWasher dishWasher;
-    Refrigerator iceBox;
+    private CoffeeMaker brewmaster;
+    private DishWasher dishWasher;
+    private Refrigerator iceBox;
 
-    public void addWater(boolean){
+    public SmartKitchen(){
+        brewmaster = new CoffeeMaker();
+        iceBox = new Refrigerator();
+        dishWasher = new DishWasher();
+    }
+
+    public CoffeeMaker getBrewmaster() {
+        return brewmaster;
+    }
+
+    public DishWasher getDishWasher() {
+        return dishWasher;
+    }
+
+    public Refrigerator getIceBox() {
+        return iceBox;
+    }
+
+    public void addWater(){
 
     }
 
@@ -18,7 +36,7 @@ public class SmartKitchen {
 
     }
 
-    public void setKitchenState(boolean){
+    public void setKitchenState(){
 
     }
 
