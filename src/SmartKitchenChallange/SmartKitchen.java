@@ -36,11 +36,16 @@ public class SmartKitchen {
 
     }
 
-    public void setKitchenState(){
-
+    public void setKitchenState(boolean coffeeFlag,boolean fridgeFlag,boolean dishWasherFlag){
+        brewmaster.setHasWorkToDo(coffeeFlag);
+        iceBox.setHasWorkToDo(fridgeFlag);
+        dishWasher.setHasWorkToDo(dishWasherFlag);
     }
 
     public void doKitchenWork(){
 
+        brewmaster.brewCoffee();
+        iceBox.orderFood();
+        dishWasher.doDishes();
     }
 }

@@ -6,13 +6,16 @@ public class Main {
 
         SmartKitchen kitchen = new SmartKitchen();
 
-        kitchen.getDishWasher().setHasWorkToDo(true);
-        kitchen.getIceBox().setHasWorkToDo(true);
-        kitchen.getBrewmaster().setHasWorkToDo(true);
+//        kitchen.getDishWasher().setHasWorkToDo(true);
+//        kitchen.getIceBox().setHasWorkToDo(true);
+//        kitchen.getBrewmaster().setHasWorkToDo(true);
+//
+//
+//        kitchen.getDishWasher().doDishes();
+//        kitchen.getIceBox().orderFood();
+//        kitchen.getBrewmaster().brewCoffee();
 
-
-        kitchen.getDishWasher().doDishes();
-        kitchen.getIceBox().orderFood();
-        kitchen.getBrewmaster().brewCoffee();
+        kitchen.setKitchenState(true,false,true);
+        kitchen.doKitchenWork();
     }
 }
